@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <title>Store Management</title>
+
+
+
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div id='toggles' onclick='productManager.changeTheme()' title='Change to dark mode'></div>
+  <div class="cardd">
+    <div class="cret">
+      <div class="head">
+        <h2>Cread</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus quidem velit ullam debitis .</p>
+
+      </div>
+      <div class="input">
+        <div class="price">
+          <input placeholder="tatel" type="text" id="tatel">
+          <input placeholder="type" type="text" id="type">
+        </div>
+        <div class="price">
+          <input placeholder="price" id="price" type="number">
+          <input type="number" placeholder="mathse" id="mathse">
+        </div>
+        <button type="submit" onclick="productManager.dataRcust()" id="submit">submit</button>
+      </div>
+      <div class="autpout">
+        <div class="search">
+
+          <input type="text" onkeyup="productManager.searchData()" id="search" placeholder="search">
+          <button href="search">search</button>
+
+        </div>
+        <div id="delatAll">
+          <button type="delatAll" class="butonTabol">Delat All</button>
+        </div>
+        <table>
+          <thead>
+            <tr>
+              <th>id</th>
+              <th>title</th>
+              <th>type </th>
+              <th>mathse</th>
+              <th>price Own</th>
+              <th>price all</th>
+
+
+              <th>delet</th>
+
+            </tr>
+          </thead>
+          <tbody id="tbody">
+
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+
+
+  <script src="main.js"></script>
+</body>
+
+</html>
